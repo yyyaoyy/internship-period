@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+
+<title>Tel5</title>
+<style>
+  .clearfix:before,
+  .clearfix:after{content: ' ';display: table;} 
+  .clearfix:after{clear:both;}
+  .wrap{width: 100%;height: 250px;float: left;}
+  .main{height: auto;margin-left: 55%;position:absolute;width: fit-content;}
+  .side{float: left;margin-left: -85%;width: 50%;height: atuo;}
+  .footer{text-align: center; width: 100%;height: 30px;background-color:	#FFA500;}
+  #fontset{font-size:2vw;}
+
+  div.ex
+{
+width:auto;
+padding-left:0px;
+padding-right: 0px;
+padding-top: 10px;
+padding-bottom: 10px;
+border:5px solid orange;
+border-left: 90px solid orange;
+margin:50px;
+position:relative;
+
+}
+
+    .ex::before{
+    	
+        content:attr(title);
+        position:absolute;
+        right:90%;
+        transform:rotate(180deg) translate(132px, -60%);
+       
+        padding:0 10px;
+        background-color:#ffa500;
+		writing-mode: vertical-rl; 
+		color:#fff;
+		font-size: 3vw;
+    }
+
+ div.ex1
+{
+width:auto;
+padding-left:0px;
+padding-right: 0px;
+padding-top: 10px;
+padding-bottom: 10px;
+border:5px solid orange;
+border-left: 90px solid orange;
+margin:50px;
+position:relative;
+
+}
+
+    .ex1::before{
+    	
+        content:attr(title);
+        position:absolute;
+        right:90%;
+        transform:rotate(180deg) translate(132px, -20%);
+       
+        padding:0 10px;
+        background-color:#ffa500;
+		writing-mode: vertical-rl; 
+		color:#fff;
+		font-size: 3vw;
+    }
+ div.ex2
+{
+width:auto;
+padding-left:0px;
+padding-right: 0px;
+padding-top: 10px;
+padding-bottom: 10px;
+border:5px solid orange;
+border-left: 90px solid orange;
+margin:50px;
+position:relative;
+
+}
+
+    .ex2::before{
+    	
+        content:attr(title);
+        position:absolute;
+        right:90%;
+        transform:rotate(180deg) translate(132px, -65%);
+       
+        padding:0 10px;
+        background-color:#ffa500;
+		writing-mode: vertical-rl; 
+		color:#fff;
+		font-size: 3vw;
+    }
+
+     div.ex3
+{
+width:auto;
+padding-left:0px;
+padding-right: 0px;
+padding-top: 10px;
+padding-bottom: 10px;
+border:5px solid orange;
+border-left: 90px solid orange;
+margin:50px;
+position:relative;
+
+}
+
+    .ex3::before{
+    	
+        content:attr(title);
+        position:absolute;
+        right:90%;
+        transform:rotate(180deg) translate(132px, -110%);
+       
+        padding:0 10px;
+        background-color:#ffa500;
+		writing-mode: vertical-rl; 
+		color:#fff;
+		font-size: 3vw;
+    }
+
+
+.label {
+          font-size: 1.7vw;
+          
+          position: absolute;
+		  transform: translate(25%, 170%);
+        }
+.text-in2 {
+          text-indent: 5mm;
+        }
+.input-style { 
+          outline-style: none;
+          background: transparent;
+          font-size: 1.5vw;;   
+	      text-indent: 5mm;
+        }
+
+/* Styles for website counter container */
+.website-counter {
+    font-size:1.8vw;
+    width:200px; 
+    height:55px;
+  background-color: #f0f8ff;
+  color: black;
+  text-align: center;
+  line-height:50px;  
+
+ /* 
+  padding-top: 10px border-radius: 30px;
+  font-weight: 700;
+  font-size: 25px;
+  margin-top: 10px;*/
+}
+ /* 
+#reset {
+  margin-top: 20px;
+  background-color: #f0f8ff;
+  cursor: pointer;
+  font-size: 18px;
+  padding: 8px 20px;
+  color: black;
+  border: 0;
+}
+*/
+	</style>
+
+	</head>
+<body>
+
+
+	<a href="https://imgbb.com/"><img src="https://i.ibb.co/cbF2h6B/T5.png" width="255" height="200" alt="T5" border="0" align="left"></a>
+
+	<a href="https://imgbb.com/"><img src="https://i.ibb.co/TqSYRtm/TT5.png" width="500" height="200" alt="TT5" align="right" border="0"></a>
+   
+
+	<form action="format.php" method="post" >
+
+
+	<div class="clearfix">
+		<div class = "wrap"> 
+            <div class ="main">
+<div id="fontset">
+Date:<br>
+<input type="date" name="Date" class="date-picker" style="width:190px; height:40px;font-size: 1.4vw;">
+<br>
+
+
+
+<p style="margin:26px  0;"></p>
+  <br>  
+  <div id='showMeg' style=" display:none">
+<span id="hhh" display:none;>
+    <br>  
+BDM Email ID:<br>
+<input type="text" disabled="disabled" id="txt" name="BDMID" value="" style="font-size:1.5vw;width:430px; height:55px;background: #f0f8ff;" required>
+</span>
+</div>
+
+
+
+
+<br>
+Authorised Person:<br>
+<input type="text" name="AuthorisedPerson" value="" style="font-size:1.5vw;background: #f0f8ff; width:430px; height:55px;background: #f0f8ff;"  required>
+<br>
+
+Business Email Address:<br>
+<input type="text" name="EmailAddress" value="" style="font-size:1.5vw;width:430px; height:55px;background: #f0f8ff;" placeholder="tel5@example.com" size="32" minlength="3" maxlength="64" pattern="^[a-zA-Z0-9]+([-_.][A-Za-zd]+)*@([A-Za-zd]+[-.])+[A-Za-zd]{2,5}$"  required>
+
+<br>
+Suburb:<br>
+<input type="text" name="Suburb" value="" style="font-size:1.5vw;width:430px; height:55px;background: #f0f8ff;" required>
+<br>
+State:<br>
+<select style="text-align: center;width:300px; height:59px;font-size: 1.5vw;" name="State" required>
+  <option value="New South Wales">New South Wales</option>
+  <option value="Victoria">Victoria</option>
+  <option value="Queensland">Queensland</option>
+  <option value="South Australia">South Australia</option>
+  <option value="Western Australia">Western Australia</option>
+  <option value="Tasmania">Tasmania</option>
+  <option value="Northern Territory">Northern Territory</option>
+  <option value="Australian Capital Territory">Australian Capital Territory</option>
+</select>
+<br>
+No. of Employees:<br>
+<input type="text" name="NoEmployees" value="" style="font-size:1.5vw;width:430px; height:55px;background: #f0f8ff;"oninput = "value=value.replace(/[^\d]/g,'')" required>
+<br>
+<script type="text/javascript">
+    var defaultDate = document.querySelectorAll('.date-picker');
+    for (var i = 0; i<defaultDate.length; i++) {
+        defaultDate[i].valueAsDate = new Date();
+    }
+</script>
+</div>
+</div>
+</div>
+
+<div class ="side">
+	<div id="fontset">
+
+<div>Query ID:</div>
+    <div class="website-counter" name="LeadID"></div>
+   
+
+ <script type="text/javascript">
+var counterContainer = document.querySelector(".website-counter");
+//var resetButton = document.querySelector("#reset");
+var visitCount = localStorage.getItem("page_view");
+
+// Check if page_view entry is present
+if (visitCount) {
+  visitCount = Number(visitCount) + 1;
+  localStorage.setItem("page_view", visitCount);
+} else {
+  visitCount = 1;
+  localStorage.setItem("page_view", 1);
+}
+counterContainer.innerHTML = visitCount;
+/*
+<button id="reset">Reset</button>
+// Adding onClick event listener
+*/
+/*
+resetButton.addEventListener("click", () => {
+  visitCount = 1;
+  localStorage.setItem("page_view", 1);
+  counterContainer.innerHTML = visitCount;
+});
+
+*/
+
+
+/*
+
+<body onload="javascript:createordernum();return false;">
+Lead ID:<br>
+<input type="text" name="Lead ID" value="" style="font-size:1.5vw;width:430px; height:55px;background: #f0f8ff;" required id="generateCom" readonly="readonly">
+<br>
+
+ <script type="text/javascript">
+function setTimeDateFmt(s) {  // The ones complement the tens
+    return s < 10 ? '0' + s : s;
+}
+//<button onclick="javascript:createordernum();return false;">click:</button>
+//window.οnload=function createordernum() {
+function createordernum() {
+    const now = new Date()
+    let month = now.getMonth() + 1
+    let day = now.getDate()
+    let hour = now.getHours()
+    let minutes = now.getMinutes()
+    let seconds = now.getSeconds()
+    month = setTimeDateFmt(month)
+    day = setTimeDateFmt(day)
+    hour = setTimeDateFmt(hour)
+    minutes = setTimeDateFmt(minutes)
+    seconds = setTimeDateFmt(seconds)
+    let value =  (Math.round(Math.random() * 100000)).toString();
+    //return orderCode;
+    //base on ssmmhhddmmyy+random create order number
+    document.getElementById("generateCom").value=(value);
+}
+*/
+</script>
+
+Existing customer:<br>
+<select name="STATUS" id="STATUS" style="text-align: center;width:150px; height:59px;font-size: 1.5vw;" onchange="onchanged();">
+             <option value="0"></option>
+             <option value="YES" >Yes</option>
+             <option value="NO" >No</option>
+</select>
+
+
+
+ <script type="text/javascript">
+
+   function onchanged(){
+
+   var id = document.getElementById("STATUS").value;
+
+   //var showMsg = document.getElementById("showMeg");
+
+   if(id=='YES'){
+
+   //showMsg.innerHTML = "<input type='text' size='25' value=''>";
+   document.getElementById("showMeg").style.display="inline"; 
+   document.getElementById("show").style.display="inline"; 
+   document.getElementById("spandemo").style.display="inline"; 
+   document.getElementById("hhh").style.display="inline";
+   }
+   else if(id=='NO'){
+document.getElementById("spandemo").style.display="none";
+document.getElementById("hhh").style.display="none";
+   }else if(id=='0'){
+document.getElementById("spandemo").style.display="none";
+document.getElementById("hhh").style.display="none";
+   }
+
+   }
+
+  </script>
+
+
+
+
+<div id='show' style=" display:none">
+<span id="spandemo" >
+    <br>
+BDM Name:<br>
+        <select  id="test" onchange="tt(this.id)" style="text-align: center;width:200px; height:59px;font-size: 1.5vw;" name="BDMname" >
+            <option value=""></option>
+            <option value="Amit Bhatt">Amit Bhatt</option>
+            <option value="Angs">Angs</option>
+            <option value="David Beames">David Beames</option>
+			<option value="Dylan Richards">Dylan Richards</option>
+			<option value="Matthew Crisp">Matthew Crisp</option>
+			<option value="Matthew Lifshack">Matthew Lifshack</option>
+			<option value="Nick Lagos">Nick Lagos</option>
+			<option value="Nishidh Shah">Nishidh Shah</option>
+			<option value="Ross Colston">Ross Colston</option>
+			<option value="Scott Williams">Scott Williams</option>
+        </select>
+        </span>
+ </div>
+  <script type="text/javascript">
+            function tt(id) {
+                var aa = document.getElementById(id);
+                var i = aa.selectedIndex;
+                var text = aa.options[i].text;
+                var value = aa.options[i].value;
+               if(value == '') {
+
+                    //text = "0302ydm@gmail.com";
+                    text = "wla17257@student.wli.edu.au";
+                    //0302ydm@gmail.com  wla17257@student.wli.edu.au
+                    //info@tel5.com.au
+                //document.getElementById("txt").disabled=false;
+               document.getElementById("txt").style.display="none";
+                }
+                if(value == 'Amit Bhatt') {
+
+                    text = "amit@tel5.com.au";
+                document.getElementById("txt").disabled=false;
+                document.getElementById("txt").style.display="inline";
+                }
+        if(value == 'Angs') {
+
+                    text = "angs@tel5.com.au";
+                document.getElementById("txt").disabled=false;
+                document.getElementById("txt").style.display="inline";
+                }
+        if(value == 'David Beames') {
+
+                    text = "david@tel5.com.au";
+                document.getElementById("txt").disabled=false;
+                document.getElementById("txt").style.display="inline";
+                }
+        if(value == 'Dylan Richards') {
+
+                    text = "dylan@tel5.com.au";
+                document.getElementById("txt").disabled=false;
+                document.getElementById("txt").style.display="inline";
+                }
+        if(value == 'Matthew Crisp') {
+
+                    text = "matthewc@tel5.com.au";
+                document.getElementById("txt").disabled=false;
+                document.getElementById("txt").style.display="inline";
+                }
+        if(value == 'Matthew Lifshack') {
+
+                    text = "matt@tel5.com.au";
+                document.getElementById("txt").disabled=false;
+                document.getElementById("txt").style.display="inline";
+                }
+        if(value == 'Nick Lagos') {
+
+                    text = "nick@tel5.com.au";
+                document.getElementById("txt").disabled=false;
+                document.getElementById("txt").style.display="inline";
+                }
+        if(value == 'Nishidh Shah') {
+
+                    text = "nish@tel5.com.au";
+                document.getElementById("txt").disabled=false;
+                document.getElementById("txt").style.display="inline";
+                }
+        if(value == 'Ross Colston') {
+
+                    text = "ross@tel5.com.au";
+                document.getElementById("txt").disabled=false;
+                document.getElementById("txt").style.display="inline";
+                }
+        if(value == 'Scott Williams') {
+
+                    text = "scott@tel5.com.au";
+                document.getElementById("txt").disabled=false;
+                document.getElementById("txt").style.display="inline";
+                }
+           //     text = "0302ydm@gmail.com";
+        
+                document.getElementById("txt").value = text;
+            }
+
+
+        </script>
+<br>
+Business Name:<br>
+<input type="text" name="Name" value="" style="font-size:1.5vw;width:430px; height:55px;background: #f0f8ff;" required>
+<br>
+
+<label class="label">0</label>
+Business Contact Number:<br>
+<input class="text-in2 input-style" type="text" name="ContactNumber" value="" style="font-size:1.5vw;width:430px; height:55px;background: #f0f8ff;" oninput = "value=value.replace(/[^\d]/g,'')" maxlength="9" required>
+<br>
+Address:<br>
+<input type="text" name="Address" value="" style="font-size:1.5vw;width:430px; height:55px;background: #f0f8ff;" required>
+<br>
+City:<br>
+<input type="text" name="City" value="" style="font-size:1.5vw;width:430px; height:55px;background: #f0f8ff;" required>
+<br>
+Post Code:<br>
+<input type="text" name="PostCode" oninput = "value=value.replace(/[^\d]/g,'')" maxlength="4" value="" style="font-size:1.5vw;width:430px; height:55px;background: #f0f8ff;" required>
+<br>
+Industry Type:<br>
+<input type="text" name="IndustryType" value="" style="font-size:1.5vw;width:430px; height:55px;background: #f0f8ff;" required>
+<br>
+</div>
+    </div>
+    </div>
+<br>
+
+<div class="ex" title="Fixed Services">
+	<div class="clearfix">
+		<div class = "wrap"> 
+            <div class ="main">
+            	<div id="fontset">
+Provider:<br>
+<input type="text" name="Provider" value="" style="font-size:1.5vw;width:425px; height:55px;background: #f0f8ff;" required>
+<br>
+Contract:<br>
+<select style="text-align: center;width:150px; height:60px;font-size: 1.5vw;" name="Contract" required>
+  <option value="YES">Yes</option>
+  <option value="NO">No</option>
+</select>
+
+<br>
+Handsets:<br>
+<input type="Number" name="Handsets" value="" min="0" onkeyup="value=value.replace(/[\D]/g,'')" style="font-size:1.5vw;width:425px; height:55px;background: #f0f8ff;" required>
+<br>
+Contract:<br>
+<select style="text-align: center;width:150px; height:60px;font-size: 1.5vw;" name="Contract1" required>
+  <option value="YES">Yes</option>
+  <option value="NO">No</option>
+</select>
+
+</div>
+</div>
+</div>
+<div class ="side">
+	<div id="fontset">
+Landlines:<br>
+<input type="Number" name="Landlines" value="" min="0" onkeyup="value=value.replace(/[\D]/g,'')" style="font-size:1.5vw;width:425px; height:55px;background: #f0f8ff;" required>
+<br>
+Type of Services:<br>
+<input type="text" name="TypeofServices" value="" style="font-size:1.5vw;width:425px; height:55px;background: #f0f8ff;" required>
+<br>
+Type Of Hardware:<br>
+<input type="text" name="TypeOfHardware" value="" style="font-size:1.5vw;width:425px; height:55px;background: #f0f8ff;" required>
+<br>
+NBN/ADSL (Speed):<br>
+<input type="text" name="NBN" value="" style="font-size:1.5vw;width:425px; height:55px;background: #f0f8ff;" oninput = "value=value.replace(/[^\d]/g,'')" required>
+<br>
+Looking For/Notes:<br>
+<textarea rows="8" cols="70" name="LookingFor" style="font-size:1.5vw;background: #f0f8ff;" required>
+</textarea>
+<br>
+</div>
+</div>
+    </div>
+</div>
+
+
+<br>
+
+<div class="ex1" title="Digital Services">
+	<div class="clearfix">
+		<div class = "wrap"> 
+            <div class ="main">
+<div id="fontset">
+Other Services: <br>
+<input type="text" name="OtherServices" value="" style="font-size:1.5vw;width:425px; height:55px;background: #f0f8ff;" required>
+<br>
+Current Spend:<br>
+<input type="text" name="CurrentSpend" value="" style="font-size:1.5vw;width:425px; height:55px;background: #f0f8ff;" oninput = "value=value.replace(/[^\d]/g,'')" required>
+<br>
+</div>
+</div>
+</div>
+<div class ="side">
+	<div id="fontset">
+Website:<br>
+<input name="Website" id="url" value="" style="font-size:1.5vw;width:425px; height:55px;background: #f0f8ff;" placeholder="tel5.com.au" pattern="^[a-zA-Z0-9][-a-zA-Z0-9]{0,62}(\.[a-zA-Z0-9][-a-zA-Z0-9]{0,62})+\.?$" >
+
+<br>
+Service Provider:<br>
+<input type="text" name="ServiceProvider" value="" style="font-size:1.5vw;width:425px; height:55px;background: #f0f8ff;" required>
+<br>
+Looking For/Notes:<br>
+<textarea rows="8" cols="70" name="LookingFor1" style="font-size:1.5vw;background: #f0f8ff;" required>
+</textarea>
+<br>
+ </div>
+  </div>
+  </div>
+  </div>
+
+<br>
+<div class="ex2" title="IT Services">
+	<div class="clearfix">
+		<div class = "wrap"> 
+            <div class ="main">
+<div id="fontset">
+Service Provider:<br>
+<input type="text" name="ServiceProvider1" value="" style="font-size:1.5vw;width:425px; height:55px;background: #f0f8ff;" required>
+<br>
+Type of Contract:<br>
+<input type="text" name="TypeofContract" value="" style="font-size:1.5vw;width:425px; height:55px;background: #f0f8ff;" required>
+<br>
+Current Spend:<br>
+<input type="text" name="CurrentSpend1" value="" style="font-size:1.5vw;width:425px; height:55px;background: #f0f8ff;"oninput = "value=value.replace(/[^\d]/g,'')" required>
+<br>
+
+</div>
+</div>
+</div>
+<div class ="side">
+	<div id="fontset">
+Managed IT:<br>
+<input type="text" name="ManagedIT" value="" style="font-size:1.5vw;width:425px; height:55px;background: #f0f8ff;" required>
+<br>
+Type of Services:<br>
+<input type="text" name="TypeofServices1" value="" style="font-size:1.5vw;width:425px; height:55px;background: #f0f8ff;" required>
+<br>
+Firewall:<br>
+<input type="text" name="Firewall" value="" style="font-size:1.5vw;width:425px; height:55px;background: #f0f8ff;" required>
+<br>
+Looking For/Notes:<br>
+<textarea rows="8" cols="70" name="LookingFor2" style="font-size:1.5vw;background: #f0f8ff;" required>
+</textarea>
+<br>
+    </div>
+    </div>
+    </div>
+    </div>
+<br>
+
+
+<div class="ex3" title="Printing Solutions">
+	<div class="clearfix">
+		<div class = "wrap"> 
+            <div class ="main">
+<div id="fontset">
+
+ <script type="text/javascript">
+ //Control can only be entered to 2 decimal places
+        function clearNoNum(obj) {
+            obj.value = obj.value.replace(/[^\d.]/g, "");  //Clear numbers and. Characters other than   
+            obj.value = obj.value.replace(/\.{2,}/g, "."); //Keep only the first one. Clear the excess   
+            obj.value = obj.value.replace(".", "$#$").replace(/\./g, "").replace("$#$", ".");
+            obj.value = obj.value.replace(/^(\-)*(\d+)\.(\d\d).*$/, '$1$2.$3');//You can only enter two decimals  
+            if (obj.value.indexOf(".") < 0 && obj.value != "") {
+				//The above has been filtered. The value controlled here is that if there is no decimal point, the first value cannot be the amount similar to 01 or 02
+                obj.value = parseFloat(obj.value);
+            }
+            	var regex = /^\.\d+/g;
+			if(obj.value.indexOf(".") != -1 && obj.value.match(regex)){
+            let str = obj.value.split(".")
+            if(str[1].length){
+              obj.value = '0.' + str[1]
+            }	
+			}
+        }
+
+</script>
+
+Brand:<br>
+<input type="text" name="Brand" value="" style="font-size:1.5vw;width:425px; height:55px;background: #f0f8ff;" required>
+<br>
+<p style="margin:20px  0;"></p>
+Current Spend:<br>
+<input type="text" name="CurrentSpend2" value="" style="font-size:1.5vw;width:425px; height:55px;background: #f0f8ff;"oninput = "value=value.replace(/[^\d]/g,'')" required>
+<br>
+<p style="margin:20px  0;"></p>
+Cost/Page:<br>
+<input type="text" name="Cost" value="" min="0" onkeyup="clearNoNum(this)"  style="font-size:1.5vw;width:425px; height:55px;background: #f0f8ff;" required>
+<br>
+<p style="margin:20px  0;"></p>
+Cost/Page:<br>
+<input type="text" name="Cost1" value=""   onkeyup="clearNoNum(this)"  style="font-size:1.5vw;width:425px; height:55px;background: #f0f8ff;" required>
+<br>
+<p style="margin:21px  0;"></p>
+Dual Scanner:<br>
+<select style="text-align: center;width:150px; height:59px;font-size: 1.5vw;" name="DualScanner" required>
+  <option value="YES">Yes</option>
+  <option value="NO">No</option>
+</select>
+<br>
+<p style="margin:21px  0;"></p>
+A3:<br>
+<select style="text-align: center;width:150px; height:59px;font-size: 1.5vw;" name="A3" required>
+  <option value="YES">Yes</option>
+  <option value="NO">No</option>
+</select>
+<br>
+<p style="margin:21px  0;"></p>
+Finisher:<br>
+<select style="text-align: center;width:150px; height:59px;font-size: 1.5vw;" name="Finisher"  required>
+  <option value="YES">Yes</option>
+  <option value="NO">No</option>
+</select>
+<br>
+
+</div>
+</div>
+</div>
+<div class ="side">
+	<div id="fontset">
+
+Type of Machine:<br>
+<input type="text" name="TypeofMachine" value="" style="font-size:1.5vw;width:425px; height:55px;background: #f0f8ff;" required>
+<br><p style="margin:20px  0;"></p>
+Rental/Own:<br>
+<select style="text-align: center;width:150px; height:59px;font-size: 1.5vw;" name="Rental/Own" required>
+  <option value="Rental">Rental</option>
+  <option value="Own">Own</option>
+</select>
+<br><p style="margin:21.5px  0;"></p>
+Mono(Pages)/Month:<br>
+<input type="text" name="Mono" value="" style="font-size:1.5vw;width:425px; height:55px;background: #f0f8ff;"oninput = "value=value.replace(/[^\d]/g,'')" required>
+<br><p style="margin:21.5px  0;"></p>
+Colour(Pages)/Month:<br>
+<input type="text" name="Colour" value="" style="font-size:1.5vw;width:425px; height:55px;background: #f0f8ff;"oninput = "value=value.replace(/[^\d]/g,'')" required>
+<br>
+<p style="margin:20px  0;"></p>
+Drawers:<br>
+<input type="Number" name="Drawers" value="" min="0" onkeyup="value=value.replace(/[\D]/g,'')" style="font-size:1.5vw;width:425px; height:55px;background: #f0f8ff;" required>
+<br>
+<p style="margin:20px  0;"></p>
+Fax:<br>
+<select style="text-align: center;width:150px; height:59px;font-size: 1.5vw;" name="Fax" required>
+  <option value="YES">Yes</option>
+  <option value="NO">No</option>
+</select>
+<br>
+<p style="margin:20px  0;"></p>
+Software Integration:<br>
+<select style="text-align: center;width:150px; height:59px;font-size: 1.5vw;" name="SoftwareIntegration" required>
+  <option value="YES">Yes</option>
+  <option value="NO">No</option>
+</select>
+<br><br>
+Looking For/Notes:<br>
+<textarea rows="8" cols="70" name="LookingFor3" style="font-size:1.5vw;background: #f0f8ff;" required>
+</textarea>
+<br>
+    </div>
+    </div>
+</div>
+</div>
+<br>
+
+<div id="fontset">
+<div style="text-align: center;">
+<input type="submit" value="Submit" align="center" style="font-size: 2.2vw;width:150px; height:60px; background-color: #FFA500;color:#fff;">
+</div>
+</div>
+
+</form> 
+
+<br>
+<div class="footer">
+        <font size="4px" color="#F8F8FF" >1300 008 355 | info@tel5.com.au | www.tel5.com.au</font>
+    </div>
+</body>
+
+
+
+</html>
+
